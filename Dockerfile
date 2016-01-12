@@ -47,7 +47,5 @@ RUN chmod +x /etc/service/postgresql/run
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-VOLUME /var/lib/postgresql/data
-
 EXPOSE 5432
 CMD ["/sbin/my_init"]
